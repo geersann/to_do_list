@@ -1,30 +1,30 @@
 let categories = [
   {
-    title: "Personal",
-    img: "boy.png",
+    title: "Особисті",
+    img: "personal.png",
   },
   {
-    title: "Work",
+    title: "Робота",
     img: "briefcase.png",
   },
   {
-    title: "Shopping",
+    title: "Закупочки",
     img: "shopping.png",
   },
   {
-    title: "Coding",
-    img: "web-design.png",
+    title: "Тинди-Ринди",
+    img: "love.png",
   },
   {
-    title: "Health",
+    title: "Здоровля",
     img: "healthcare.png",
   },
   {
-    title: "Fitness",
+    title: "Шпорт",
     img: "dumbbell.png",
   },
   {
-    title: "Education",
+    title: "Навчання",
     img: "education.png",
   },
   {
@@ -37,43 +37,43 @@ let tasks = [
   {
     id: 1,
     task: "Go to market",
-    category: "Shopping",
+    category: "Закупочки",
     completed: false,
   },
   {
     id: 2,
     task: "Read a chapter of a book",
-    category: "Personal",
+    category: "Особисті",
     completed: false,
   },
   {
     id: 3,
     task: "Prepare presentation for meeting",
-    category: "Work",
+    category: "Робота",
     completed: false,
   },
   {
     id: 4,
-    task: "Complete coding challenge",
-    category: "Coding",
+    task: "Complete Тинди-Ринди challenge",
+    category: "Тинди-Ринди",
     completed: false,
   },
   {
     id: 5,
     task: "Take a 30-minute walk",
-    category: "Health",
+    category: "Здоровля",
     completed: false,
   },
   {
     id: 6,
-    task: "Do a 20-minute HIIT workout",
-    category: "Fitness",
+    task: "Do a 20-minute HIIT Роботаout",
+    category: "Шпорт",
     completed: false,
   },
   {
     id: 7,
-    task: "Watch an educational video online",
-    category: "Education",
+    task: "Watch an Навчанняal video online",
+    category: "Навчання",
     completed: false,
   },
   {
@@ -85,43 +85,43 @@ let tasks = [
   {
     id: 9,
     task: "Buy groceries for the week",
-    category: "Shopping",
+    category: "Закупочки",
     completed: false,
   },
   {
     id: 10,
     task: "Write in a journal",
-    category: "Personal",
+    category: "Особисті",
     completed: false,
   },
   {
     id: 11,
     task: "Send follow-up emails",
-    category: "Work",
+    category: "Робота",
     completed: false,
   },
   {
     id: 12,
-    task: "Work on a coding side project",
-    category: "Coding",
+    task: "Робота on a Тинди-Ринди side project",
+    category: "Тинди-Ринди",
     completed: false,
   },
   {
     id: 13,
-    task: "Try a new healthy recipe",
-    category: "Health",
+    task: "Try a new Здоровляy recipe",
+    category: "Здоровля",
     completed: false,
   },
   {
     id: 14,
     task: "Attend a yoga class",
-    category: "Fitness",
+    category: "Шпорт",
     completed: false,
   },
   {
     id: 15,
     task: "Read an article about a new topic",
-    category: "Education",
+    category: "Навчання",
     completed: false,
   },
   {
@@ -134,49 +134,49 @@ let tasks = [
   {
     id: 17,
     task: "Buy new clothes",
-    category: "Shopping",
+    category: "Закупочки",
     completed: false,
   },
   {
     id: 18,
     task: "Meditate for 10 minutes",
-    category: "Personal",
+    category: "Особисті",
     completed: false,
   },
   {
     id: 19,
     task: "Prepare agenda for team meeting",
-    category: "Work",
+    category: "Робота",
     completed: false,
   },
   {
     id: 20,
     task: "Debug a software issue",
-    category: "Coding",
+    category: "Тинди-Ринди",
     completed: false,
   },
   {
     id: 21,
     task: "Try a new recipe for lunch",
-    category: "Health",
+    category: "Здоровля",
     completed: false,
   },
   {
     id: 22,
     task: "Go for a run",
-    category: "Fitness",
+    category: "Шпорт",
     completed: false,
   },
   {
     id: 23,
     task: "Learn a new language online",
-    category: "Education",
+    category: "Навчання",
     completed: false,
   },
   {
     id: 24,
     task: "Read about history",
-    category: "Education",
+    category: "Навчання",
     completed: false,
   },
   {
@@ -237,7 +237,7 @@ const renderCategories = () => {
                   />
                 <div class="content">
                   <h1>${category.title}</h1>
-                  <p>${categoryTasks.length} Tasks</p>
+                  <p>${categoryTasks.length} Задач</p>
                 </div>
               </div>
               <div class="options">
@@ -271,7 +271,7 @@ const renderTasks = () => {
       task.category.toLowerCase() === selectedCategory.title.toLowerCase()
   );
   if (categoryTasks.length === 0) {
-    tasksContainer.innerHTML = `<p class="no-tasks">No tasks added for this category</p>`;
+    tasksContainer.innerHTML = `<p class="no-tasks">Добав задачу лінтяй</p>`;
   } else {
     categoryTasks.forEach((task) => {
       const div = document.createElement("div");
