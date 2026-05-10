@@ -209,7 +209,7 @@ const updateTotals = () => {
     (task) =>
       task.category.toLowerCase() === selectedCategory.title.toLowerCase()
   );
-  numTasks.innerHTML = `${categoryTasks.length} Tasks`;
+  numTasks.innerHTML = `${categoryTasks.length} Задач`;
   totalTasks.innerHTML = tasks.length;
 };
 
